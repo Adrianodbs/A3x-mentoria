@@ -1,7 +1,9 @@
+import RouteApp from './routes/RouteApp'
+
 function App() {
   return (
     <div>
-      <h1>Oi</h1>
+      <RouteApp />
     </div>
   )
 }
