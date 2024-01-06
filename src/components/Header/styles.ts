@@ -14,6 +14,8 @@ export const HeaderStyle = styled.header`
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
+  box-shadow: 0px 6px 4px 7px rgba(169, 7, 202, 1);
+
 
   @media (max-width: 780px){
     height: 30vh;
