@@ -14,7 +14,7 @@ export default function Header() {
     <C.HeaderStyle>
       <C.Title open={menuOpen}>
         A3X
-        <span>Monitoria</span>
+        <span>Mentoria</span>
       </C.Title>
       <C.MenuToggle onClick={handleMenuClick}>
         {menuOpen ? <IoMdClose /> : <GiHamburgerMenu />}

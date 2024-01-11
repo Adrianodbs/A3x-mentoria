@@ -2,11 +2,16 @@ import styled from 'styled-components'
 import { FaReact } from 'react-icons/fa'
 import { RiJavascriptFill } from 'react-icons/ri'
 
-export default function Presentation() {
+interface PresentationProps {
+  title: string
+  subtitle: string
+}
+
+export default function Presentation({ title, subtitle }: PresentationProps) {
   return (
     <PresentationStyle>
-      <h1>Monitoria em JavaScript e React:</h1>
-      <h3>Você superando os desafios do Front End!</h3>
+      <h1>{title}</h1>
+      <h3>{subtitle}</h3>
       <Icons>
         <FaReact size={80} color="#61DBFB" />
         <RiJavascriptFill size={80} color="#EFD81D" />
