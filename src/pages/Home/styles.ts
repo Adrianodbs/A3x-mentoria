@@ -15,13 +15,6 @@ export const Questions = styled.div`
   text-align: center;
   padding: 24px;
 
-  h2{
-    font-size: 28px;
-  }
-
-  span{
-    font-size: 20px;
-  }
 `
 
 export const Cards = styled.div``
