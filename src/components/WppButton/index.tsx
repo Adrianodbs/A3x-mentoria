@@ -5,8 +5,15 @@ interface ButtonProps{
 }
 
 export default function WppButton({children}:ButtonProps) {
+  const handleWhatsAppClick = () => {
+    const phoneNumber = '+5574999456227'; 
+    const message = 'Olá, gostaria de agendar um atendimento!'; 
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    
+    window.open(whatsappUrl, '_blank');
+  };
   return (
-    <Container>
+    <Container onClick={handleWhatsAppClick}>
       {children}
     </Container>
   )
