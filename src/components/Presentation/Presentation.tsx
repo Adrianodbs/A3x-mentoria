@@ -34,7 +34,7 @@ const PresentationStyle = styled.section`
   );
   padding: 60px 20px;
   margin-top: 4px;
-  height: 60vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   color: #fff;
@@ -42,14 +42,32 @@ const PresentationStyle = styled.section`
   align-items: center;
   text-align: center;
 
+  @media (max-width: 768px) {
+    padding: 28px 8px;
+  }
+
   h1 {
     font-size: 34px;
     margin-bottom: 12px;
     font-weight: 900;
+
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
   }
 
   h3 {
     font-size: 24px;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+
+  svg{
+    @media (max-width: 768px) {
+      width: 60px;
+    }
   }
 `
 

@@ -1,7 +1,9 @@
+import { FaWhatsapp } from 'react-icons/fa'
 import CardsQuestionCollection from '../../components/CardsQuestionCollection'
 import HowItWorks from '../../components/HowItWorks'
 import Presentation from '../../components/Presentation/Presentation'
 import Title from '../../components/Title'
+import WppButton from '../../components/WppButton'
 import * as C from './styles'
 
 export default function Home() {
@@ -20,6 +22,13 @@ export default function Home() {
         <CardsQuestionCollection />
       </C.Questions>
       <HowItWorks />
+      <div className='btn'>
+        <WppButton>
+          <p>Agende um atendimento</p>
+          <FaWhatsapp />
+        </WppButton>  
+      </div>
+     
     </C.Container>
   )
 }
